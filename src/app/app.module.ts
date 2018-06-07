@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MapModule } from './map/map.module';
 import { MapService } from './map/map.service';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MapService } from './map/map.service';
     MapModule
   ],
   providers: [
-    MapService
+    MapService,
+    AppService
   ],
   bootstrap: [AppComponent]
 })
